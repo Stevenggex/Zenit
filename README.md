@@ -1,4 +1,4 @@
-# 🛡️ AssetShield — Sistema de Gestión de Activos de Información y Evaluación de Riesgos de Ciberseguridad
+# 🛡️ Zenit — Sistema de Gestión de Activos de Información y Evaluación de Riesgos de Ciberseguridad
 
 > **Asignatura:** Diseño de Interfaces  
 > **Institución:** Escuela Politécnica Nacional (EPN) — Escuela de Formación de Tecnólogos (ESFOT)  

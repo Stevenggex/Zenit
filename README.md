@@ -57,7 +57,7 @@ Nuestra solución proporciona un **módulo CRUD de activos**, un **motor de cál
 ## 📂 Estructura del Proyecto
 
 ```text
-AssetShield-Web/
+Zenit/
 ├── index.html                # Página principal (Hero & About Sections)
 ├── README.md                 # Documentación técnica del proyecto
 ├── .gitignore                # Exclusiones de control de versiones

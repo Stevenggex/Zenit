@@ -72,7 +72,7 @@ Zenit/
     ├── img/                  # Logotipos, ilustraciones y recursos gráficos
     └── icons/                # Favicon e íconos de la interfaz
 =======
-# 🛡️ AssetShield — Sistema de Gestión de Activos de Información y Evaluación de Riesgos de Ciberseguridad
+# 🛡️ Zenit — Sistema de Gestión de Activos de Información y Evaluación de Riesgos de Ciberseguridad
 
 > **Asignatura:** Diseño de Interfaces  
 > **Institución:** Escuela Politécnica Nacional (EPN) — Escuela de Formación de Tecnólogos (ESFOT)  
@@ -84,7 +84,7 @@ Zenit/
 
 ## 📌 Visión General del Proyecto
 
-**AssetShield** es una plataforma web enterprise orientada a medianas y grandes empresas que buscan centralizar, controlar y auditar la seguridad de su infraestructura tecnológica. 
+**Zenit** es una plataforma web enterprise orientada a medianas y grandes empresas que buscan centralizar, controlar y auditar la seguridad de su infraestructura tecnológica. 
 
 El sistema resuelve tres grandes problemáticas de las organizaciones:
 1. **Falta de visibilidad y centralización:** Inventario disperso e informal de equipos y servicios.
@@ -130,7 +130,7 @@ Nuestra solución proporciona un **módulo CRUD de activos**, un **motor de cál
 ## 📂 Estructura del Proyecto
 
 ```text
-AssetShield-Web/
+Zenit/
 ├── index.html                # Página principal (Hero & About Sections)
 ├── README.md                 # Documentación técnica del proyecto
 ├── .gitignore                # Exclusiones de control de versiones
@@ -145,4 +145,4 @@ AssetShield-Web/
 └── assets/
     ├── img/                  # Logotipos, ilustraciones y recursos gráficos
     └── icons/                # Favicon e íconos de la interfaz
->>>>>>> 8b96ff4 (feat: agregado de los logos en fondo claro y oscuro en formato svg)
+

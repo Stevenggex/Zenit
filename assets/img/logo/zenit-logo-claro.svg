@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 340 500 810" width="500" height="810" role="img" aria-label="ZENÎT logo (fondo claro)">
+<title>ZENÎT</title>
+<defs>
+<linearGradient id="gInner" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f4470"/><stop offset="1" stop-color="#101a28"/></linearGradient>
+<linearGradient id="gFacet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6bb4ff"/><stop offset="1" stop-color="#3b84e0"/></linearGradient>
+</defs>
+<g transform="translate(0,0)">
+<path d="M150 540 V488 A118 118 0 0 1 386 488 V540 H354 V488 A86 86 0 0 0 182 488 V540 Z" fill="#1d4a73"/>
+<path d="M64 571 L268 505 L473 571 C473 700 406 850 268 945 C130 850 64 700 64 571 Z" fill="#f4f5fa" stroke="#1d4a73" stroke-width="28" stroke-linejoin="miter"/>
+
+<polygon points="268,705 268,745 196,808 214,740" fill="#2f7bff"/>
+<polygon points="268,705 268,745 340,802 366,826 318,742" fill="#1d4a73"/>
+<polygon points="268.0,550.0 304.4,654.8 415.4,657.1 327.0,724.2 359.1,830.4 268.0,767.0 176.9,830.4 209.0,724.2 120.6,657.1 231.6,654.8" fill="none" stroke="#2f7bff" stroke-width="14" stroke-linejoin="miter"/>
+<polygon points="268,765 296,788 268,872" fill="#1d4a73"/>
+<polygon points="268,765 240,788 268,872" fill="#2f7bff"/>
+<polygon points="40,1020 128,1020 128,1040 84,1103 128,1103 128,1125 40,1125 40,1105 84,1042 40,1042" fill="#1d4a73"/>
+<polygon points="150,1020 229,1020 229,1042 172,1042 172,1062 222,1062 222,1083 172,1083 172,1103 229,1103 229,1125 150,1125" fill="#1d4a73"/>
+<polygon points="249,1020 271,1020 323,1088 323,1020 345,1020 345,1125 323,1125 271,1057 271,1125 249,1125" fill="#1d4a73"/>
+<polygon points="372,1020 392,1020 392,1125 372,1125" fill="#1d4a73"/>
+<polygon points="410,1020 502,1020 502,1042 466,1042 466,1125 444,1125 444,1042 410,1042" fill="#1d4a73"/>
+<polyline points="358,984 382,958 406,984" fill="none" stroke="#1d4a73" stroke-width="10"/>
+</g>
+</svg>

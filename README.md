@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛡️ Zenit — Sistema de Gestión de Activos de Información y Evaluación de Riesgos de Ciberseguridad
 
 > **Asignatura:** Diseño de Interfaces  

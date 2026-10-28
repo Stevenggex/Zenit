@@ -1,0 +1,83 @@
+
+/* Tablet: desde 768 px */
+@media (min-width: 768px) {
+    :root {
+        --page-padding: 2rem;
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .main-nav {
+        min-width: 0;
+    }
+
+    .nav-list {
+        gap: 1rem;
+    }
+
+    .hero,
+    .about {
+        padding-block: 4rem;
+    }
+
+    .hero-content,
+    .about-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .hero-text {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Escritorio: desde 1024 px */
+@media (min-width: 1024px) {
+    :root {
+        --page-padding: 2.5rem;
+    }
+
+    .header-content {
+        gap: 3rem;
+    }
+
+    .nav-list {
+        gap: 1.5rem;
+    }
+
+    .hero,
+    .about {
+        padding-block: 5rem;
+    }
+
+    .hero-content,
+    .about-content {
+        gap: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 3.25rem;
+    }
+}
+
+/* Monitores grandes: desde 1440 px */
+@media (min-width: 1440px) {
+    :root {
+        --container-width: 1200px;
+    }
+
+    .hero,
+    .about {
+        padding-block: 6rem;
+    }
+
+    .hero-content,
+    .about-content {
+        gap: 4rem;
+    }
+}

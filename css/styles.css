@@ -1,11 +1,3 @@
-/* ==========================================================================
-   Zenit Cybersecurity — Mobile-First Production Stylesheet (css/styles.css)
-   Target Viewports: 375px - 414px (Mobile First, zero horizontal overflow)
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. Design Tokens (Modo Oscuro por Defecto - Fondo #11141c)
-   -------------------------------------------------------------------------- */
 :root {
   --bg-dark: #11141c;
   --bg-card: #181d2a;
@@ -39,9 +31,6 @@
   --transition-fast: 0.2s ease-in-out;
 }
 
-/* --------------------------------------------------------------------------
-   Variables MODO CLARO (Fondo #ffffff)
-   -------------------------------------------------------------------------- */
 body.light-mode {
   --bg-dark: #ffffff;
   --bg-card: #f8fafc;
@@ -59,10 +48,6 @@ body.light-mode {
 
   --burger-color: #0f172a;
 }
-
-/* --------------------------------------------------------------------------
-   2. Reset Base
-   -------------------------------------------------------------------------- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -108,7 +93,6 @@ ul, ol {
   list-style: none;
 }
 
-/* Touch Targets >= 44px */
 .btn-demo,
 .btn-blue,
 .btn-outline,
@@ -123,9 +107,6 @@ ul, ol {
   user-select: none;
 }
 
-/* --------------------------------------------------------------------------
-   3. Navbar & Logo Horizontal (Símbolo + Texto Al Lado)
-   -------------------------------------------------------------------------- */
 .navbar {
   position: sticky;
   top: 0;
@@ -147,28 +128,25 @@ ul, ol {
   text-decoration: none;
 }
 
-/* Contenedor que recorta el texto inferior del SVG → solo se ve el icono/escudo */
 .logo-crop {
   width: 45px;
-  height: 80px;           /* ← altura más baja para cortar el texto inferior */
+  height: 80px;           
   overflow: hidden;
   display: flex;
-  align-items: flex-start; /* ← importante: empieza desde arriba */
+  align-items: flex-start; 
   justify-content: center;
   flex-shrink: 0;
 }
 
 .brand-icon {
   width: 45px !important;
-  height: auto !important; /* ← dejamos que el SVG mantenga su proporción */
+  height: auto !important; 
   max-width: none !important;
   object-fit: cover;
   object-position: top center;
   display: block;
 }
 
-
-/* ← FILTRO ELIMINADO (era el culpable de que el logo se pintara de azul) */
 
 .nav-right {
   display: flex;
@@ -254,9 +232,6 @@ ul, ol {
   color: var(--text-muted);
 }
 
-/* --------------------------------------------------------------------------
-   4. Hero Section
-   -------------------------------------------------------------------------- */
 .hero {
   padding: 2rem 1.25rem 1.5rem;
 }
@@ -359,9 +334,6 @@ ul, ol {
   justify-content: center;
 }
 
-/* --------------------------------------------------------------------------
-   5. Servicios & Secciones
-   -------------------------------------------------------------------------- */
 .services-section, .how-it-works, .social-proof, .cta-section {
   padding: 2rem 1.25rem;
 }
@@ -428,7 +400,6 @@ ul, ol {
   flex-shrink: 0;
 }
 
-/* Patrocinadores y CTA Final */
 .social-proof .eyebrow {
   font-size: 0.75rem;
   color: var(--text-muted);
@@ -467,9 +438,6 @@ ul, ol {
   color: var(--text-primary);
 }
 
-/* --------------------------------------------------------------------------
-   6. Footer Component
-   -------------------------------------------------------------------------- */
 .footer-main {
   background-color: var(--bg-dark);
   border-top: 1px solid var(--border-card);
@@ -482,7 +450,7 @@ ul, ol {
   margin-top: 12px;
 }
 
-/* Logo un poco más pequeño en el footer */
+
 .footer-brand .logo-crop {
   width: 70px;
   height: 120px;

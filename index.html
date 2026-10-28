@@ -8,17 +8,15 @@
 </head>
 <body>
 
-    <!-- NAVBAR COMPONENT -->
+
     <header class="navbar">
         <a href="#" class="brand-logo" aria-label="Ir al inicio de Zenit">
-            <!-- Contenedor recortador para mostrar solo el símbolo/escudo -->
             <div class="logo-crop">
                 <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="mainLogo">
             </div>
         </a>
         
         <div class="nav-right">
-            <!-- BOTÓN MODO CLARO / OSCURO -->
             <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar a Modo Claro / Oscuro" title="Cambiar tema">
                 <span id="themeIcon">☀️</span>
             </button>
@@ -31,7 +29,7 @@
             </button>
         </div>
 
-        <!-- MENÚ DESPLEGABLE MÓVIL -->
+
         <nav class="mobile-dropdown" id="mobileMenu" aria-label="Navegación principal móvil">
             <ul>
                 <li>
@@ -63,7 +61,7 @@
     </header>
 
     <main>
-        <!-- HERO SECTION -->
+
         <section class="hero">
             <h1>Protege la <span class="highlight">información crítica</span> de tu empresa</h1>
             <div class="title-underline"></div>
@@ -72,7 +70,7 @@
                 Gestiona activos, evalúa riesgos de ciberseguridad y genera reportes automáticos en un solo sistema.
             </p>
 
-            <!-- CARRUSEL CARD -->
+
             <div class="carousel-box">
                 <div class="carousel-header">
                     <span>CARRUSEL DE IMÁGENES</span>
@@ -86,14 +84,14 @@
                 </div>
             </div>
 
-            <!-- BOTONES HERO -->
+
             <div class="hero-actions">
                 <a href="#demo" class="btn-blue">Solicitar Demo</a>
                 <a href="#servicios" class="btn-outline">Ver Servicios</a>
             </div>
         </section>
 
-        <!-- SERVICIOS SECTION -->
+
         <section id="servicios" class="services-section">
             <h2 class="section-title">Nuestros Servicios</h2>
             <div class="title-underline"></div>
@@ -149,7 +147,7 @@
             </div>
         </section>
 
-        <!-- CÓMO FUNCIONA SECTION -->
+
         <section class="how-it-works">
             <h2 class="section-title">Cómo Funciona</h2>
             <div class="title-underline"></div>
@@ -189,7 +187,7 @@
             </div>
         </section>
 
-        <!-- SOCIOS -->
+
         <section class="social-proof">
             <p class="eyebrow">EMPRESAS QUE CONFÍAN EN NOSOTROS</p>
             <div class="partners-grid">
@@ -199,7 +197,7 @@
             </div>
         </section>
 
-        <!-- CTA CONVERSIÓN -->
+
         <section class="cta-section">
             <div class="cta-box">
                 <h2>¿Listo para proteger tu empresa?</h2>
@@ -208,7 +206,6 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer-main">
         <div class="footer-brand">
             <a href="#" class="brand-logo">
@@ -260,9 +257,7 @@
         </div>
     </footer>
 
-    <!-- SCRIPT DE INTERACCIÓN -->
     <script>
-        // Menú Hamburguesa
         const burgerBtn = document.getElementById('burgerBtn');
         const mobileMenu = document.getElementById('mobileMenu');
 
@@ -272,7 +267,6 @@
             });
         }
 
-        // Alternar tema Claro / Oscuro
         const themeToggleBtn = document.getElementById('themeToggleBtn');
         const themeIcon = document.getElementById('themeIcon');
         const mainLogo = document.getElementById('mainLogo');

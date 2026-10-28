@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ZENIT - Ciberseguridad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+    <header class="navbar">
+        <a href="#" class="brand-logo" aria-label="Ir al inicio de Zenit">
+            <div class="logo-crop">
+                <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="mainLogo">
+            </div>
+        </a>
+        
+        <div class="nav-right">
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar a Modo Claro / Oscuro" title="Cambiar tema">
+                <span id="themeIcon">☀️</span>
+            </button>
+
+            <a href="#login" class="nav-link">Login</a>
+            <button class="menu-burger" id="burgerBtn" aria-label="Abrir menú de navegación">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+
+
+        <nav class="mobile-dropdown" id="mobileMenu" aria-label="Navegación principal móvil">
+            <ul>
+                <li>
+                    <a href="#contacto">
+                        <span>Contacto</span>
+                        <span class="arrow">&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <span>Sobre el sistema</span>
+                        <span class="arrow">&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#servicios">
+                        <span>Servicios</span>
+                        <span class="arrow">&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#precios">
+                        <span>Precios</span>
+                        <span class="arrow">&gt;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Protege la <span class="highlight">información crítica</span> de tu empresa</h1>
+            <div class="title-underline"></div>
+            
+            <p class="hero-subtext">
+                Gestiona activos, evalúa riesgos de ciberseguridad y genera reportes automáticos en un solo sistema.
+            </p>
+
+
+            <div class="carousel-box">
+                <div class="carousel-header">
+                    <span>CARRUSEL DE IMÁGENES</span>
+                    <span class="slide-count">[Slide 3 / 3]</span>
+                </div>
+                <div class="carousel-screen"></div>
+                <div class="carousel-dots">
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot active"></span>
+                </div>
+            </div>
+
+
+            <div class="hero-actions">
+                <a href="#demo" class="btn-blue">Solicitar Demo</a>
+                <a href="#about" class="btn-outline">Sobre el Sistema</a>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN ABOUT (Sobre el Sistema) - HU08 -->
+        <section id="about" class="about-section">
+            <div class="about-header">
+                <span class="section-tag">SOBRE EL SISTEMA</span>
+                <h2 class="section-title">Sobre el Sistema: <span class="highlight">Zenit</span></h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">
+                    Plataforma web integral diseñada para transformar la gestión de ciberseguridad en pequeñas y medianas empresas, mitigando riesgos y centralizando el control.
+                </p>
+            </div>
+
+            <!-- Problemática y Solución -->
+            <div class="about-overview">
+                <!-- Subsección Problemática -->
+                <article class="overview-card problem-card">
+                    <span class="overview-badge badge-problem">Problemática</span>
+                    <div class="overview-header">
+                        <div class="overview-icon icon-problem">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3>Falta de gestión de activos y riesgos en PyMEs</h3>
+                    </div>
+                    <p>
+                        La mayoría de pequeñas y medianas empresas carecen de procesos formales para gestionar sus activos tecnológicos y evaluar sus riesgos de ciberseguridad. El inventario suele estar disperso en hojas de cálculo desactualizadas, sin visibilidad de las vulnerabilidades existentes ni de las dependencias críticas.
+                    </p>
+                    <ul class="overview-points">
+                        <li>Falta de inventario centralizado de hardware, software y servicios.</li>
+                        <li>Evaluación empírica y subjetiva del riesgo sin metodologías estandarizadas.</li>
+                        <li>Incapacidad para priorizar mitigaciones ante recursos limitados de seguridad.</li>
+                    </ul>
+                </article>
+
+                <!-- Subsección Solución -->
+                <article class="overview-card solution-card">
+                    <span class="overview-badge badge-solution">Solución</span>
+                    <div class="overview-header">
+                        <div class="overview-icon icon-solution">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 11 14 15 10"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Sistema web de gestión de activos y evaluación de riesgos</h3>
+                    </div>
+                    <p>
+                        Zenit ofrece una solución web moderna, intuitiva y robusta que permite a las organizaciones consolidar su infraestructura tecnológica en un único punto, correlacionar vulnerabilidades reconocidas internacionalmente, cuantificar riesgos de forma objetiva y automatizada, y generar reportes ejecutivos listos para auditorías.
+                    </p>
+                    <ul class="overview-points">
+                        <li>Inventario unificado con clasificación de criticidad y trazabilidad.</li>
+                        <li>Motor cuantitativo de cálculo de riesgo basado en matriz 5×5 y semáforo visual.</li>
+                        <li>Exportación ejecutiva de informes en PDF para toma de decisiones ágil.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <!-- Subsección Módulos Principales -->
+            <div class="about-modules">
+                <div class="modules-heading">
+                    <h3 class="modules-title">Módulos Principales</h3>
+                    <p class="modules-desc">
+                        Nuestra arquitectura modular cubre el ciclo completo de análisis y mitigación de amenazas tecnológicas:
+                    </p>
+                </div>
+
+                <div class="modules-grid">
+                    <!-- Módulo 1 -->
+                    <article class="module-card">
+                        <div class="module-card-top">
+                            <div class="module-icon icon-asset">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <span class="module-tag">Módulo 01</span>
+                        </div>
+                        <h4 class="module-name">Gestión de Activos</h4>
+                        <p class="module-description">
+                            Inventario centralizado y estructurado de activos informáticos (servidores, bases de datos, redes y terminales), con asignación de responsables y nivel de impacto operativo.
+                        </p>
+                    </article>
+
+                    <!-- Módulo 2 -->
+                    <article class="module-card">
+                        <div class="module-card-top">
+                            <div class="module-icon icon-vuln">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                            </div>
+                            <span class="module-tag">Módulo 02</span>
+                        </div>
+                        <h4 class="module-name">Catálogo de Vulnerabilidades</h4>
+                        <p class="module-description">
+                            Repositorio dinámico de debilidades de seguridad basado en estándares internacionales (CVE/CVSS) para asociar amenazas específicas a cada activo inventariado.
+                        </p>
+                    </article>
+
+                    <!-- Módulo 3 -->
+                    <article class="module-card">
+                        <div class="module-card-top">
+                            <div class="module-icon icon-calc">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                                </svg>
+                            </div>
+                            <span class="module-tag">Módulo 03</span>
+                        </div>
+                        <h4 class="module-name">Cálculo de Riesgo y Matriz</h4>
+                        <p class="module-description">
+                            Algoritmo matemático que procesa impacto vs probabilidad en una matriz dinámica de 5×5, clasificando riesgos en niveles con código semáforo (Verde, Amarillo, Rojo).
+                        </p>
+                    </article>
+
+                    <!-- Módulo 4 -->
+                    <article class="module-card">
+                        <div class="module-card-top">
+                            <div class="module-icon icon-report">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                            </div>
+                            <span class="module-tag">Módulo 04</span>
+                        </div>
+                        <h4 class="module-name">Reportes y PDF</h4>
+                        <p class="module-description">
+                            Generación instantánea de dossiers ejecutivos e informes técnicos descargables en PDF, optimizados para auditorías internas, cumplimiento y directivas empresariales.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="servicios" class="services-section">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="title-underline"></div>
+
+            <div class="services-list">
+                <article class="service-card">
+                    <div class="card-icon icon-blue"></div>
+                    <div class="service-content">
+                        <h3>Gestión de Activos de Información</h3>
+                        <p>Inventario exhaustivo y mapeo de dependencias de servidores, bases de datos y endpoints en tiempo real.</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon icon-yellow"></div>
+                    <div class="service-content">
+                        <h3>Catálogo y Evaluación de Vulnerabilidades</h3>
+                        <p>Detección proactiva alineada con repositorios CVE y puntuación CVSS continua para priorizar mitigaciones.</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon icon-red"></div>
+                    <div class="service-content">
+                        <h3>Cálculo Automático de Riesgo</h3>
+                        <p>Algoritmo predictivo de impacto vs probabilidad basado en marcos de seguridad para cuantificar pérdidas.</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon icon-green"></div>
+                    <div class="service-content">
+                        <h3>Auditor de Contraseñas</h3>
+                        <p>Análisis de entropía de credenciales corporativas, cumplimiento de políticas MFA y chequeo en bases de brechas.</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon icon-blue-dark"></div>
+                    <div class="service-content">
+                        <h3>Script de Pruebas de Seguridad</h3>
+                        <p>Automatización de pruebas continuas, auditorías de configuración y verificación activa de puertos expuestos.</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon icon-orange"></div>
+                    <div class="service-content">
+                        <h3>Reportes y Dashboard en PDF</h3>
+                        <p>Generación ejecutiva de informes de cumplimiento normativo y dossiers listos para junta directiva y auditorías.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="how-it-works">
+            <h2 class="section-title">Cómo Funciona</h2>
+            <div class="title-underline"></div>
+
+            <div class="steps-list">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <h4>Registra tus activos</h4>
+                        <p>Sincronización automática de componentes y recursos.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <h4>Evalúa vulnerabilidades</h4>
+                        <p>Escaneo continuo y análisis de vulnerabilidades en el sistema.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <h4>Obtén tu matriz de riesgo</h4>
+                        <p>Priorización cuantitativa y hoja de ruta de mitigación.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <h4>Descarga tu reporte PDF</h4>
+                        <p>Dossier oficial para auditorías y toma de decisiones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="social-proof">
+            <p class="eyebrow">EMPRESAS QUE CONFÍAN EN NOSOTROS</p>
+            <div class="partners-grid">
+                <div class="partner-box"></div>
+                <div class="partner-box"></div>
+                <div class="partner-box"></div>
+            </div>
+        </section>
+
+
+        <section class="cta-section">
+            <div class="cta-box">
+                <h2>¿Listo para proteger tu empresa?</h2>
+                <a href="#demo" class="btn-blue">Empieza Ahora</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-main">
+        <div class="footer-brand">
+            <a href="#" class="brand-logo">
+                <div class="logo-crop">
+                    <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="footerLogo">
+                </div>
+            </a>
+            <p>Plataforma de gestión de riesgos de ciberseguridad para empresas medianas y grandes.</p>
+        </div>
+
+        <div class="footer-links-grid">
+            <div class="footer-col">
+                <h5>Servicios</h5>
+                <ul>
+                    <li><a href="#">Gestión de Activos</a></li>
+                    <li><a href="#">Evaluación de Riesgos</a></li>
+                    <li><a href="#">Reportes PDF</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Empresa</h5>
+                <ul>
+                    <li><a href="#about">Sobre el sistema</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Síguenos</h5>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>WireFrame UI v1.0 • Formato Móvil</p>
+            <p>© 2025. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (burgerBtn && mobileMenu) {
+            burgerBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Cerrar menú móvil al seleccionar cualquier enlace
+            const menuLinks = mobileMenu.querySelectorAll('a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+        const themeIcon = document.getElementById('themeIcon');
+        const mainLogo = document.getElementById('mainLogo');
+        const footerLogo = document.getElementById('footerLogo');
+
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', () => {
+                document.body.classList.toggle('light-mode');
+                
+                const isLight = document.body.classList.contains('light-mode');
+
+                if (themeIcon) {
+                    themeIcon.textContent = isLight ? '🌙' : '☀️';
+                }
+
+                if (isLight) {
+                    mainLogo.src = 'assets/img/logo/zenit-logo-claro.svg';
+                    if (footerLogo) footerLogo.src = 'assets/img/logo/zenit-logo-claro.svg';
+                } else {
+                    mainLogo.src = 'assets/img/logo/zenit-logo-oscuro.svg';
+                    if (footerLogo) footerLogo.src = 'assets/img/logo/zenit-logo-oscuro.svg';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,36 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZENIT Ciber Security: gestión inteligente de activos y riesgos de ciberseguridad.">
     <title>ZENIT Ciber Security</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header>
-        <img src="assets/img/logo/zenit-logo-claro.svg" alt="Logo de Zenit">
-        <nav aria-label = "Navegacion principal">
-            <ul>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#precios">Precio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="#" aria-label="Inicio de Zenit">
+                <img src="assets/img/logo/zenit-logo-claro.svg"
+                     alt="Logo de Zenit">
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Gestión Inteligente de Activos y Riesgos de Ciberseguridad</h1>
-            <p>Esta aplicacion web busca mejorar la seguridad de las empresas mediante un software
-                que nos ayuda a evaluar la seguridad de nuestros dispositivos, redes, contraseñas y entre 
-                otras aplicaciones/dispositivos de nestra vida diaria.
-            </p>
-            <a href="#servicios">Explorar Servicios</a>
-            <a href="#precios">Explorar Precios</a>
-            <a href="#sobre-nosotros">Descubre mas sobre nuetra empresa</a>
-            <a href="#contacto">Para mas informacion contactanos aqui</a>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Gestión Inteligente de Activos y Riesgos de Ciberseguridad</h1>
+
+                    <p>
+                        Esta aplicación web busca mejorar la seguridad de las empresas
+                        mediante un software que nos ayuda a evaluar la seguridad de
+                        nuestros dispositivos, redes, contraseñas y otras aplicaciones
+                        y dispositivos de nuestra vida diaria.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#servicios">
+                            Explorar servicios
+                        </a>
+
+                        <a class="btn btn-secondary" href="#precios">
+                            Explorar precios
+                        </a>
+                    </div>
+
+                    <a class="hero-link" href="#sobre-nosotros">
+                        Descubre más sobre nuestra empresa
+                    </a>
+
+                    <a class="hero-link" href="#contacto">
+                        Para más información, contáctanos aquí
+                    </a>
+                </div>
+            </div>
         </section>
+
+        <section class="about" id="sobre-nosotros">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>Sobre nosotros</h2>
+                    <p>
+                        En Zenit buscamos ayudar a las empresas a comprender y
+                        gestionar sus activos y riesgos de ciberseguridad.
+                    </p>
+                </div>
+
+                <div class="about-media">
+                    <!-- Aquí se podrá incorporar la imagen de la sección About. -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Las secciones de servicios, precios y contacto se integrarán después. -->
     </main>
-    
 </body>
 </html>

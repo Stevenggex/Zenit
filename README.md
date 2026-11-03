@@ -24,7 +24,7 @@ Nuestra solución proporciona un **módulo CRUD de activos**, un **motor de cál
 
 ## Demo y Enlaces de Producción
 
-- **URL de Producción:** [[https://assetshield-epn.netlify.app/](https://assetshield-epn.netlify.app/)](https://zenit-six-ivory.vercel.app)
+- **URL de Producción:** https://zenit-six-ivory.vercel.app
 - **Repositorio en GitHub:** [https://github.com/Stevenggex/Zenit](https://github.com/Stevenggex/Zenit)
 - **Tablero Scrum en Jira (Proyecto ZEN):** [https://epn-team-dwx6xqzj.atlassian.net/jira/software/projects/ZEN/boards/35/backlog](https://epn-team-dwx6xqzj.atlassian.net/jira/software/projects/ZEN/boards/35/backlog)
 

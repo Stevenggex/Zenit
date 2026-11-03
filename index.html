@@ -352,6 +352,24 @@
                 <a href="#demo" class="btn-blue">Empieza Ahora</a>
             </div>
         </section>
+
+        <section class="about" id="sobre-nosotros">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>Sobre nosotros</h2>
+                    <p>
+                        En Zenit buscamos ayudar a las empresas a comprender y
+                        gestionar sus activos y riesgos de ciberseguridad.
+                    </p>
+                </div>
+
+                <div class="about-media">
+                    <!-- Aquí se podrá incorporar la imagen de la sección About. -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Las secciones de servicios, precios y contacto se integrarán después. -->
     </main>
 
     <footer class="footer-main">
@@ -413,8 +431,6 @@
             burgerBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('active');
             });
-
-            // Cerrar menú móvil al seleccionar cualquier enlace
             const menuLinks = mobileMenu.querySelectorAll('a');
             menuLinks.forEach(link => {
                 link.addEventListener('click', () => {

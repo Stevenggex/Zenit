@@ -1,83 +1,309 @@
+/* ==========================================================================
+   [HU10 / ZEN-41] BASE DE DISEÑO ADAPTATIVO - ZENIT (MOBILE-FIRST)
+   Responsable: Steven Gallo
+   ========================================================================== */
 
-/* Tablet: desde 768 px */
+/* --------------------------------------------------------------------------
+   ZEN-46: Definición de Breakpoints y Variables CSS de Layout (:root)
+   Breakpoints oficiales:
+   - Base Móvil : < 768px (definido en css/styles.css)
+   - Tablet     : @media (min-width: 768px)
+   - Desktop    : @media (min-width: 1024px)
+   - Wide Screen: @media (min-width: 1440px)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Referencia documentada de breakpoints */
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-wide: 1440px;
+
+  /* Ancho máximo del contenedor y márgenes laterales adaptativos */
+  --container-max-width: 1200px;
+  --page-padding: 1.25rem;
+
+  /* Sistema de columnas y espaciado de grillas */
+  --grid-columns: 4;
+  --grid-gap: 1rem;
+  --section-space-y: clamp(2rem, 4vw, 4.5rem);
+
+  /* Tipografía fluida escalable (rem y clamp) */
+  --fs-hero-h1: clamp(1.8rem, 3.6vw, 3.1rem);
+  --fs-section-h2: clamp(1.5rem, 2.6vw, 2.25rem);
+  --fs-card-h3: clamp(1.05rem, 1.4vw, 1.25rem);
+  --fs-body: clamp(0.9rem, 1.05vw, 1.05rem);
+}
+
+/* --------------------------------------------------------------------------
+   ZEN-47: Contenedor General Centrado y Grid Base Reutilizable
+   Clases disponibles para todo el equipo (HU11, HU12, etc.)
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--page-padding);
+}
+
+.zenit-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+.zenit-flex {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+}
+
+.grid-2-cols,
+.grid-3-cols,
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--grid-gap);
+}
+
+/* ==========================================================================
+   ZEN-48: TABLET — @media (min-width: 768px)
+   Reorganización general a 2 columnas sin desbordamiento horizontal
+   ========================================================================== */
 @media (min-width: 768px) {
-    :root {
-        --page-padding: 2rem;
-    }
+  :root {
+    --page-padding: 2rem;
+    --grid-columns: 8;
+    --grid-gap: 1.5rem;
+  }
 
-    .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-    }
+  /* Utilidades reutilizables en Tablet */
+  .grid-2-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .main-nav {
-        min-width: 0;
-    }
+  .zenit-flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .nav-list {
-        gap: 1rem;
-    }
+  /* Contenedor centrado aplicado a las secciones generales de la página */
+  .hero,
+  .about-section,
+  .services-section,
+  .how-it-works,
+  .social-proof,
+  .cta-section,
+  .about .about-content {
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    padding-inline: var(--page-padding);
+    padding-block: var(--section-space-y);
+  }
 
-    .hero,
-    .about {
-        padding-block: 4rem;
-    }
+  .navbar {
+    padding-inline: var(--page-padding);
+  }
 
-    .hero-content,
-    .about-content {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2rem;
-    }
+  /* Hero: botones horizontales y mejor proporción de lectura */
+  .hero h1 {
+    font-size: var(--fs-hero-h1);
+    max-width: 22ch;
+  }
 
-    .hero-text {
-        grid-column: 1 / -1;
-    }
+  .hero-subtext {
+    font-size: var(--fs-body);
+    max-width: 60ch;
+  }
+
+  .carousel-screen {
+    height: 240px;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-actions .btn-blue,
+  .hero-actions .btn-outline {
+    padding-inline: 1.75rem;
+  }
+
+  .section-title {
+    font-size: var(--fs-section-h2);
+  }
+
+  /* Servicios y Cómo Funciona pasan de 1 columna a 2 columnas */
+  .services-list,
+  .steps-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--grid-gap);
+  }
+
+  /* Sección About (#sobre-nosotros) a 2 columnas */
+  .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--grid-gap);
+    align-items: center;
+  }
+
+  /* CTA más amplio */
+  .cta-box {
+    padding: 2.5rem 2rem;
+    align-items: center;
+  }
+
+  .cta-box .btn-blue {
+    padding-inline: 2rem;
+  }
+
+  /* Footer: 4 columnas de enlaces */
+  .footer-main {
+    padding-inline: var(--page-padding);
+  }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--grid-gap);
+  }
 }
 
-/* Escritorio: desde 1024 px */
+/* ==========================================================================
+   ZEN-49: DESKTOP — @media (min-width: 1024px)
+   Navegación horizontal completa y layout de escritorio
+   ========================================================================== */
 @media (min-width: 1024px) {
-    :root {
-        --page-padding: 2.5rem;
-    }
+  :root {
+    --page-padding: 2.5rem;
+    --grid-columns: 12;
+    --grid-gap: 1.75rem;
+  }
 
-    .header-content {
-        gap: 3rem;
-    }
+  /* Utilidades reutilizables en Desktop */
+  .grid-3-cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
-    .nav-list {
-        gap: 1.5rem;
-    }
+  .grid-4-cols {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 
-    .hero,
-    .about {
-        padding-block: 5rem;
-    }
+  /* Navbar Desktop: mostrar menú horizontal y ocultar hamburguesa móvil */
+  .menu-burger {
+    display: none;
+  }
 
-    .hero-content,
-    .about-content {
-        gap: 3rem;
-    }
+  .mobile-dropdown {
+    display: block;
+    position: static;
+    width: auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    order: 2;
+  }
 
-    .hero h1 {
-        font-size: 3.25rem;
-    }
+  .mobile-dropdown ul {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .mobile-dropdown li {
+    border-bottom: none;
+  }
+
+  .mobile-dropdown a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.92rem;
+    width: auto;
+  }
+
+  .mobile-dropdown a:hover {
+    background: transparent;
+    color: var(--blue-highlight);
+  }
+
+  .mobile-dropdown .arrow {
+    display: none;
+  }
+
+  .nav-right {
+    order: 3;
+    gap: 1rem;
+  }
+
+  /* Hero Desktop: grid asimétrico (Texto/Acciones izquierda | Carrusel derecha) */
+  .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .hero h1,
+  .hero .title-underline,
+  .hero .hero-subtext,
+  .hero .hero-actions {
+    grid-column: 1;
+  }
+
+  .hero .carousel-box {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    margin: 0;
+  }
+
+  .carousel-screen {
+    height: 290px;
+  }
+
+  /* Servicios en 3 columnas y Pasos en 4 columnas */
+  .services-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .steps-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .step-card {
+    flex-direction: column;
+  }
+
+  /* Footer Desktop: marca a la izquierda + 4 columnas de enlaces a la derecha */
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    column-gap: 3rem;
+    align-items: start;
+  }
+
+  .footer-links-grid {
+    margin-top: 0;
+  }
+
+  .footer-bottom {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-/* Monitores grandes: desde 1440 px */
+/* ==========================================================================
+   ZEN-49: MONITORES GRANDES / WIDE DESKTOP — @media (min-width: 1440px)
+   Ancho máximo centrado y mayor aire visual
+   ========================================================================== */
 @media (min-width: 1440px) {
-    :root {
-        --container-width: 1200px;
-    }
+  :root {
+    --container-max-width: 1320px;
+    --grid-gap: 2rem;
+  }
 
-    .hero,
-    .about {
-        padding-block: 6rem;
-    }
-
-    .hero-content,
-    .about-content {
-        gap: 4rem;
-    }
+  .carousel-screen {
+    height: 330px;
+  }
 }

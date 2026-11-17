@@ -101,7 +101,33 @@
   }
 
   .navbar {
-    padding-inline: var(--page-padding);
+    padding: 12px var(--page-padding);
+    gap: 1.5rem;
+  }
+
+  /* Navbar Tablet: mostrar desktop-nav y ocultar menú hamburguesa móvil */
+  .menu-burger,
+  .mobile-dropdown,
+  .mobile-dropdown.active,
+  .nav-right .nav-link {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .desktop-nav a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 8px 4px;
   }
 
   /* Hero: botones horizontales y mejor proporción de lectura */
@@ -159,14 +185,28 @@
     padding-inline: 2rem;
   }
 
-  /* Footer: 4 columnas de enlaces */
+  /* Footer Tablet: 4 columnas de enlaces */
   .footer-main {
-    padding-inline: var(--page-padding);
+    padding: 3.5rem var(--page-padding) 40px;
+  }
+
+  .footer-container {
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(0, 2.4fr);
+    column-gap: 2rem;
+    align-items: start;
   }
 
   .footer-links-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: var(--grid-gap);
+    gap: 1.5rem;
+  }
+
+  .footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
   }
 }
 
@@ -190,44 +230,8 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  /* Navbar Desktop: mostrar menú horizontal y ocultar hamburguesa móvil */
-  .menu-burger {
-    display: none;
-  }
-
-  .mobile-dropdown {
-    display: block;
-    position: static;
-    width: auto;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    order: 2;
-  }
-
-  .mobile-dropdown ul {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-  }
-
-  .mobile-dropdown li {
-    border-bottom: none;
-  }
-
-  .mobile-dropdown a {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.92rem;
-    width: auto;
-  }
-
-  .mobile-dropdown a:hover {
-    background: transparent;
-    color: var(--blue-highlight);
-  }
-
-  .mobile-dropdown .arrow {
-    display: none;
+  .desktop-nav ul {
+    gap: 2rem;
   }
 
   .nav-right {
@@ -274,14 +278,15 @@
   }
 
   /* Footer Desktop: marca a la izquierda + 4 columnas de enlaces a la derecha */
-  .footer-main {
-    display: grid;
-    grid-template-columns: 1.1fr 2fr;
+  .footer-container {
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    grid-template-columns: minmax(240px, 1fr) minmax(0, 3fr);
     column-gap: 3rem;
-    align-items: start;
   }
 
   .footer-links-grid {
+    gap: 2rem;
     margin-top: 0;
   }
 
@@ -305,5 +310,10 @@
 
   .carousel-screen {
     height: 330px;
+  }
+
+  .footer-container {
+    max-width: var(--container-max-width);
+    column-gap: 4rem;
   }
 }

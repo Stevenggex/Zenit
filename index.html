@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>ZENIT - Ciberseguridad</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -17,6 +17,16 @@
                 <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="mainLogo">
             </div>
         </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#about">Sobre el sistema</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
         
         <div class="nav-right">
             <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar a Modo Claro / Oscuro" title="Cambiar tema">
@@ -355,73 +365,59 @@
             </div>
         </section>
 
-        <section class="about" id="sobre-nosotros">
-            <div class="container about-content">
-                <div class="about-text">
-                    <h2>Sobre nosotros</h2>
-                    <p>
-                        En Zenit buscamos ayudar a las empresas a comprender y
-                        gestionar sus activos y riesgos de ciberseguridad.
-                    </p>
-                </div>
-
-                <div class="about-media">
-                    <!-- Aquí se podrá incorporar la imagen de la sección About. -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Las secciones de servicios, precios y contacto se integrarán después. -->
     </main>
 
     <footer class="footer-main">
-        <div class="footer-brand">
-            <a href="#" class="brand-logo">
-                <div class="logo-crop">
-                    <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="footerLogo">
+        <div class="footer-container">
+            <div class="footer-brand" id="sobre-nosotros">
+                <a href="#" class="brand-logo footer-logo" aria-label="Ir al inicio de Zenit">
+                    <div class="logo-crop">
+                        <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="footerLogo">
+                    </div>
+                </a>
+                <p class="footer-brand-text">Ayudamos a las empresas a comprender y gestionar sus activos y riesgos de ciberseguridad.</p>
+            </div>
+
+            <nav class="footer-links-grid" aria-label="Enlaces del pie de página">
+                <div class="footer-col">
+                    <h5>Servicios</h5>
+                    <ul>
+                        <li><a href="#">Gestión de Activos</a></li>
+                        <li><a href="#">Evaluación de Riesgos</a></li>
+                        <li><a href="#">Reportes PDF</a></li>
+                    </ul>
                 </div>
-            </a>
-            <p>Plataforma de gestión de riesgos de ciberseguridad para empresas medianas y grandes.</p>
-        </div>
+                <div class="footer-col">
+                    <h5>Empresa</h5>
+                    <ul>
+                        <li><a href="#about">Sobre el sistema</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Síguenos</h5>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <div class="footer-links-grid">
-            <div class="footer-col">
-                <h5>Servicios</h5>
-                <ul>
-                    <li><a href="#">Gestión de Activos</a></li>
-                    <li><a href="#">Evaluación de Riesgos</a></li>
-                    <li><a href="#">Reportes PDF</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Empresa</h5>
-                <ul>
-                    <li><a href="#about">Sobre el sistema</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Legal</h5>
-                <ul>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos de Servicio</a></li>
-                    <li><a href="#">Aviso Legal</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Síguenos</h5>
-                <ul>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">GitHub</a></li>
-                </ul>
-            </div>
-        </div>
+            <hr class="footer-divider">
 
-        <div class="footer-bottom">
-            <p>WireFrame UI v1.0 • Formato Móvil</p>
-            <p>© 2025. Todos los derechos reservados.</p>
+            <div class="footer-bottom">
+                <p>© 2026 Zenit. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 

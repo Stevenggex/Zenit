@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Zenit — Plataforma web de gestión de activos de información y evaluación de riesgos de ciberseguridad.">
     <title>ZENIT - Ciberseguridad</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/logo/zenit-logo-oscuro.svg">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -15,14 +19,24 @@
                 <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="mainLogo">
             </div>
         </a>
+
+        <nav class="desktop-nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#about">Sobre el sistema</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
         
         <div class="nav-right">
-            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Cambiar a Modo Claro / Oscuro" title="Cambiar tema">
+            <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Cambiar a Modo Claro / Oscuro" title="Cambiar tema">
                 <span id="themeIcon">☀️</span>
             </button>
 
             <a href="#login" class="nav-link">Login</a>
-            <button class="menu-burger" id="burgerBtn" aria-label="Abrir menú de navegación">
+            <button class="menu-burger" id="burgerBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú de navegación">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -304,7 +318,7 @@
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <div class="step-info">
-                        <h4>Registra tus activos</h4>
+                        <h3>Registra tus activos</h3>
                         <p>Sincronización automática de componentes y recursos.</p>
                     </div>
                 </div>
@@ -312,7 +326,7 @@
                 <div class="step-card">
                     <div class="step-number">2</div>
                     <div class="step-info">
-                        <h4>Evalúa vulnerabilidades</h4>
+                        <h3>Evalúa vulnerabilidades</h3>
                         <p>Escaneo continuo y análisis de vulnerabilidades en el sistema.</p>
                     </div>
                 </div>
@@ -320,7 +334,7 @@
                 <div class="step-card">
                     <div class="step-number">3</div>
                     <div class="step-info">
-                        <h4>Obtén tu matriz de riesgo</h4>
+                        <h3>Obtén tu matriz de riesgo</h3>
                         <p>Priorización cuantitativa y hoja de ruta de mitigación.</p>
                     </div>
                 </div>
@@ -328,7 +342,7 @@
                 <div class="step-card">
                     <div class="step-number">4</div>
                     <div class="step-info">
-                        <h4>Descarga tu reporte PDF</h4>
+                        <h3>Descarga tu reporte PDF</h3>
                         <p>Dossier oficial para auditorías y toma de decisiones.</p>
                     </div>
                 </div>
@@ -337,7 +351,7 @@
 
 
         <section class="social-proof">
-            <p class="eyebrow">EMPRESAS QUE CONFÍAN EN NOSOTROS</p>
+            <h2 class="eyebrow">EMPRESAS QUE CONFÍAN EN NOSOTROS</h2>
             <div class="partners-grid">
                 <div class="partner-box"></div>
                 <div class="partner-box"></div>
@@ -353,73 +367,59 @@
             </div>
         </section>
 
-        <section class="about" id="sobre-nosotros">
-            <div class="container about-content">
-                <div class="about-text">
-                    <h2>Sobre nosotros</h2>
-                    <p>
-                        En Zenit buscamos ayudar a las empresas a comprender y
-                        gestionar sus activos y riesgos de ciberseguridad.
-                    </p>
-                </div>
-
-                <div class="about-media">
-                    <!-- Aquí se podrá incorporar la imagen de la sección About. -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Las secciones de servicios, precios y contacto se integrarán después. -->
     </main>
 
     <footer class="footer-main">
-        <div class="footer-brand">
-            <a href="#" class="brand-logo">
-                <div class="logo-crop">
-                    <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="footerLogo">
+        <div class="footer-container">
+            <div class="footer-brand" id="sobre-nosotros">
+                <a href="#" class="brand-logo footer-logo" aria-label="Ir al inicio de Zenit">
+                    <div class="logo-crop">
+                        <img src="assets/img/logo/zenit-logo-oscuro.svg" alt="Isotipo Zenit" class="brand-icon" id="footerLogo">
+                    </div>
+                </a>
+                <p class="footer-brand-text">Ayudamos a las empresas a comprender y gestionar sus activos y riesgos de ciberseguridad.</p>
+            </div>
+
+            <nav class="footer-links-grid" aria-label="Enlaces del pie de página">
+                <div class="footer-col">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Gestión de Activos</a></li>
+                        <li><a href="#">Evaluación de Riesgos</a></li>
+                        <li><a href="#">Reportes PDF</a></li>
+                    </ul>
                 </div>
-            </a>
-            <p>Plataforma de gestión de riesgos de ciberseguridad para empresas medianas y grandes.</p>
-        </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#about">Sobre el sistema</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Síguenos</h3>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <div class="footer-links-grid">
-            <div class="footer-col">
-                <h5>Servicios</h5>
-                <ul>
-                    <li><a href="#">Gestión de Activos</a></li>
-                    <li><a href="#">Evaluación de Riesgos</a></li>
-                    <li><a href="#">Reportes PDF</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Empresa</h5>
-                <ul>
-                    <li><a href="#about">Sobre el sistema</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Legal</h5>
-                <ul>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos de Servicio</a></li>
-                    <li><a href="#">Aviso Legal</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h5>Síguenos</h5>
-                <ul>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">GitHub</a></li>
-                </ul>
-            </div>
-        </div>
+            <hr class="footer-divider">
 
-        <div class="footer-bottom">
-            <p>WireFrame UI v1.0 • Formato Móvil</p>
-            <p>© 2025. Todos los derechos reservados.</p>
+            <div class="footer-bottom">
+                <p>© 2026 Zenit. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
@@ -429,12 +429,14 @@
 
         if (burgerBtn && mobileMenu) {
             burgerBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('active');
+                const isActive = mobileMenu.classList.toggle('active');
+                burgerBtn.setAttribute('aria-expanded', String(isActive));
             });
             const menuLinks = mobileMenu.querySelectorAll('a');
             menuLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.remove('active');
+                    burgerBtn.setAttribute('aria-expanded', 'false');
                 });
             });
         }
